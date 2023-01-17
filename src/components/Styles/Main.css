@@ -1,0 +1,35 @@
+:root {
+    --yellow: #EDBB00;
+    --red: #D4002E;
+   }
+   
+
+.list .listItem .listIcon .icon{
+    width: 35px;
+    height:35px;
+    margin-top: 25px;
+     transform: scale(1.1);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  
+}
+.list  .listIcon  {
+     width: 50px;
+    height:55px;
+    margin-top: 25px;
+     transform: scale(1.1);
+    border-radius: 100%;
+    transition: all 0.4s ease-in-out;
+ 
+ 
+}
+.list  .listIcon :hover {
+    
+opacity: 0.9; 
+ 
+}
+ 
+ 

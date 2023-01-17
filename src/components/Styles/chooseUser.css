@@ -1,0 +1,31 @@
+
+:root {
+    --yellow: #EDBB00;
+    --red: #D4002E;
+   }
+   h6{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+    color: black;
+  
+}
+#avatar{
+    width: 200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#card:hover  {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+
+    }
+    #card{ 
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+        border-radius: 20px;  
+          transition: all ease-in-out 0.5s;
+      }

@@ -1,0 +1,9 @@
+.notifCard {
+    animation-name: coverAnim ;
+    animation-duration: 1s;
+ }
+@keyframes coverAnim {
+    from{   opacity: 0;}
+    to{   opacity: 1;}
+}
+ 

@@ -1,0 +1,47 @@
+:root {
+    --yellow: #EDBB00;
+    --red: #D4002E;
+   }
+   
+h1{
+    font-family: 'Bungee Inline', cursive;
+}
+h4{
+    
+}
+.homeContainer{
+    overflow : auto;
+    display: flex;
+   
+}
+ 
+.homeContainer .Card{
+   margin-left: 20px;
+}
+ 
+.rec.rec-arrow {
+    border-radius:  10px;
+    color: white;
+    background-color: var(--yellow);
+    border: 0px;
+    box-shadow: rgba(78, 78, 78, 0.5)  0px 8px 24px;
+   
+}
+ .rec.rec-arrow:hover:enabled {
+    
+    background-color: var(--yellow);
+   }
+   
+
+   .rec.rec-arrow:not(:hover):enabled {
+    
+    background-color: var(--yellow);
+   }
+   
+
+ .rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+.rec.rec-dot{
+    visibility: hidden;
+}

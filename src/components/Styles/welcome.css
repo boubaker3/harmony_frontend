@@ -1,0 +1,76 @@
+
+:root {
+    --yellow: #EDBB00;
+    --red: #D4002E;
+   }
+   #body{
+     height: 100%;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#logo{
+    width:50px;
+     height:50px;
+     vertical-align: middle;
+     top: auto;
+     object-fit: cover;
+     bottom: 0;
+     right: auto;
+     left: auto;
+     margin: 0;
+       
+}
+#cover {
+    animation-name: coverAnim ;
+    animation-duration: 2s ;
+
+}
+@keyframes coverAnim {
+    from{margin-top: -200px; opacity: 0;}
+    to{margin-top: 0px; opacity: 1;}
+}
+ 
+h6{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+    color: white;
+  
+}
+#container1{
+   display: inline-block; 
+  vertical-align: middle;
+  
+}
+#logocontainer{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+   background-color: #ffffff !important;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  margin-bottom:300px;
+}
+#infoscontainer{
+    position: fixed;
+  top: 0;
+  right : 0;
+   z-index: 999;
+   background-color: #ffffff !important;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  margin-bottom:300px;
+}
+h1{
+      color: var(--red); 
+ 
+}
+h2{
+      color: var(--yellow);
+}
+.Button :hover{
+    color: white;
+    background-color: var(--yellow);
+}
