@@ -21,7 +21,22 @@ import ChatPage from './components/Chat';
 import ProductDetails from './components/ProductDetails';
 import {  Routes , Route } from 'react-router-dom';
 import { useNavigate,useLocation } from 'react-router-dom';
+import { useSelector, useDispatch } from "react-redux";
+import {setIsAuth} from './components/redux/Auth';
  function App() { 
+
+  const isAuth=useSelector(state=>state.isAuth);
+  const dispatch=useDispatch();
+useEffect(()=>{
+
+  if(sessionStorage.getItem("token")){
+    dispatch(setIsAuth(true))
+  }
+  if(!isAuth){
+    navigate("/welcome");
+  }
+},[])
+
    const user=JSON.parse(sessionStorage.getItem("user"));
    const navigate=useNavigate();
   useEffect(()=>{
@@ -31,6 +46,8 @@ import { useNavigate,useLocation } from 'react-router-dom';
   },[]);
   const query = new URLSearchParams(useLocation().search);
   const userid = query.get('userid');
+
+
    return (
     < >
   

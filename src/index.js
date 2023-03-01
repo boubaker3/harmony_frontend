@@ -15,7 +15,7 @@ const theme = createTheme({
       secondary: {
         main: "#D4002E"
       }
-    },
+    }, 
   
   });
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +23,7 @@ root.render(
   <BrowserRouter>
 
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider  theme={theme}>
 <Provider store={configStore}>
 <App />
 </Provider>
